@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+
+  <!-- Audio samples styles -->
+  <style>
+    .samples-section {
+      padding: 2rem 0;
+    }
+    
+    .sample-container {
+      margin-bottom: 3rem;
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    
+    .sample-id {
+      font-family: 'Monaco', 'Consolas', monospace;
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .sample-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .sample-table th {
+      background: #2563eb;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    
+    .sample-table td {
+      padding: 1.5rem;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #e5e7eb;
+    }
+    
+    .sample-table td:first-child {
+      text-align: left;
+      background: #f3f4f6;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 400px;
+    }
+    
+    .sample-table audio {
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .instruction-text {
+      font-style: italic;
+      color: #374151;
+    }
+    
+    .sample-table th:first-child,
+    .sample-table td:first-child {
+      width: 40%;
+    }
+    
+    .sample-table th:nth-child(2),
+    .sample-table td:nth-child(2),
+    .sample-table th:nth-child(3),
+    .sample-table td:nth-child(3) {
+      width: 30%;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .sample-table {
+        display: block;
+      }
+      
+      .sample-table thead {
+        display: none;
+      }
+      
+      .sample-table tbody, 
+      .sample-table tr, 
+      .sample-table td {
+        display: block;
+        width: 100%;
+      }
+      
+      .sample-table td {
+        text-align: center !important;
+        padding: 1rem;
+        max-width: none !important;
+      }
+      
+      .sample-table td:before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #2563eb;
+      }
+      
+      .sample-table audio {
+        max-width: 100%;
+      }
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .section-header h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 0.5rem;
+    }
+    
+    .section-header p {
+      color: #6b7280;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <!-- TODO: Replace with your lab's related works -->
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <!-- TODO: Replace with actual paper title -->
+            <h5>Paper Title 1</h5>
+            <!-- TODO: Replace with brief description -->
+            <p>Brief description of the work and its main contribution.</p>
+            <!-- TODO: Replace with venue and year -->
+            <span class="work-venue">Conference/Journal 2024</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <!-- TODO: Add more related works or remove extra items -->
+        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 2</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 3</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">AudioChat: Unified Audio Storytelling, Editing, and Understanding with Transfusion Forcing</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <a href="https://wanchichen.github.io/" target="_blank">William Chen</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://pseeth.github.io/" target="_blank">Prem Seetharaman</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://ritheshkumar.com/" target="_blank">Rithesh Kumar</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.urinieto.com/about/" target="_blank">Oriol Nieto</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://sites.google.com/view/shinjiwatanabe" target="_blank">Shinji Watanabe</a><sup>2</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.justinsalamon.com/" target="_blank">Justin Salamon</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://research.adobe.com/person/zeyu-jin/" target="_blank">Zeyu Jin</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block">Adobe Research<sup>1</sup>, Carnegie Mellon University<sup>2</sup></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Despite recent breakthroughs, audio foundation models struggle in processing complex multi-source acoustic scenes. We refer to this challenging domain as audio stories, which can have multiple speakers and background/foreground sound effects. Compared to traditional audio processing tasks, audio stories introduce new layers of semantic, temporal, and physical complexity. To address this challenge, we propose AudioChat, a framework for developing audio foundation models that can generate, edit, and understand audio stories. AudioChat introduces a new paradigm in which LLM-based toolcalling agents simulate interactions between users and the system, and these simulated dialogues are used as training data. We also introduce a novel Audio Transfusion Forcing objective to train the AudioChat model, allowing it to simultaneously decompose high-level instructions via structured chain-of-thought reasoning and perform interactive multi-turn audio understanding/generation. To evaluate generation and editing performance, we develop three new metrics that directly measure task performance instead of relying upon distribution-based scoring.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Audio Samples Section -->
+<section class="section samples-section">
+  <div class="container is-max-desktop">
+    
+    <div class="section-header">
+      <h2 class="title is-3">Audio Samples</h2>
+      <p>Listen to the source audio and the generated result based on each instruction</p>
+    </div>
+
+    <!-- Sample: 1320-122617-0021-storygeneval-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 1320-122617-0021-storygeneval-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Make the door opening sound more dramatic, and make it faster.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/1320-122617-0021-storygeneval-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/1320-122617-0021-storygeneval-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 1995-1836-0011-storygeneval-all-all -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 1995-1836-0011-storygeneval-all-all</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">make the footsteps more determined and less gravelly</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/1995-1836-0011-storygeneval-all-all/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/1995-1836-0011-storygeneval-all-all/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 2300-131720-0013-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 2300-131720-0013-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Make the generator sound more unstable and older</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/2300-131720-0013-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/2300-131720-0013-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 237-134500-0020-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 237-134500-0020-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">make the spaceship door sound more dramatic</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/237-134500-0020-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/237-134500-0020-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 4507-16021-0046-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 4507-16021-0046-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">make the waves more dramatic and violent</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/4507-16021-0046-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/4507-16021-0046-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 4970-29095-0033-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 4970-29095-0033-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Can you make the creaking wood sound older and more distressed?</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/4970-29095-0033-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/4970-29095-0033-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 4970-29095-0017-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 4970-29095-0017-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Make the lute a harp instead.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/4970-29095-0017-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/4970-29095-0017-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 672-122797-0019-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 672-122797-0019-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">I think the footsteps are a little too heavy. Can we make them lighter and softer?</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/672-122797-0019-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/672-122797-0019-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 672-122797-0040-storygeneval-all-all -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 672-122797-0040-storygeneval-all-all</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">make the tree sound more ancient, less creaky.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/672-122797-0040-storygeneval-all-all/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/672-122797-0040-storygeneval-all-all/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 1580-141083-0040-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 1580-141083-0040-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Make the creaking floorboards more dramatic and add a slight echo.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/1580-141083-0040-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/1580-141083-0040-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 61-70968-0006-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 61-70968-0006-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">make the wind less pronounced, and the music box more mysterious</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/61-70968-0006-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/61-70968-0006-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 672-122797-0008-storygeneval-all-all -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 672-122797-0008-storygeneval-all-all</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Change the axe sound to a chainsaw.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/672-122797-0008-storygeneval-all-all/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/672-122797-0008-storygeneval-all-all/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 6829-68769-0029-storygeneval-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 6829-68769-0029-storygeneval-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Make the gavel sound more chaotic, and more frequent.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/6829-68769-0029-storygeneval-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/6829-68769-0029-storygeneval-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 7127-75947-0033-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 7127-75947-0033-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Let's make the raven sound more ominous. More drawn out, lower pitched.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/7127-75947-0033-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/7127-75947-0033-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 7176-92135-0010-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 7176-92135-0010-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Let's make the raven caw sound more menacing, and also add the sound of a sword being unsheathed.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/7176-92135-0010-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/7176-92135-0010-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 1221-135767-0012-storygeneval-add-add -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 1221-135767-0012-storygeneval-add-add</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Add footsteps on stone</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/1221-135767-0012-storygeneval-add-add/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/1221-135767-0012-storygeneval-add-add/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 61-70968-0017-storygeneval-sfx-add-add -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 61-70968-0017-storygeneval-sfx-add-add</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Add a dying scream.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/61-70968-0017-storygeneval-sfx-add-add/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/61-70968-0017-storygeneval-sfx-add-add/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 121-127105-0027-storygeneval-sfx-remove-remove -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 121-127105-0027-storygeneval-sfx-remove-remove</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Remove the carriage sound.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/121-127105-0027-storygeneval-sfx-remove-remove/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/121-127105-0027-storygeneval-sfx-remove-remove/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 121-121726-0004-storygeneval-sfx-remove-remove -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 121-121726-0004-storygeneval-sfx-remove-remove</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">remove the harp arpeggios.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/121-121726-0004-storygeneval-sfx-remove-remove/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/121-121726-0004-storygeneval-sfx-remove-remove/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 1284-1181-0021-storygeneval-volume-volume -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 1284-1181-0021-storygeneval-volume-volume</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Lower the loudness of the interrogation room hum</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/1284-1181-0021-storygeneval-volume-volume/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/1284-1181-0021-storygeneval-volume-volume/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 2830-3980-0058-storygeneval-all-all -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 2830-3980-0058-storygeneval-all-all</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">make the piano music slightly louder</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/2830-3980-0058-storygeneval-all-all/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/2830-3980-0058-storygeneval-all-all/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 4970-29093-0004-storygeneval-all-all -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 4970-29093-0004-storygeneval-all-all</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">remove the female speaker</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/4970-29093-0004-storygeneval-all-all/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/4970-29093-0004-storygeneval-all-all/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 237-134500-0040-storygeneval-move-move -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 237-134500-0040-storygeneval-move-move</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Move the church bell slightly left.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/237-134500-0040-storygeneval-move-move/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/237-134500-0040-storygeneval-move-move/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 260-123440-0017-storygeneval-all-all -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 260-123440-0017-storygeneval-all-all</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Make the clock ticking quieter and move it to the left.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/260-123440-0017-storygeneval-all-all/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/260-123440-0017-storygeneval-all-all/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 3570-5696-0009-storygeneval-move-move -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 3570-5696-0009-storygeneval-move-move</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Move the first speaker more left.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/3570-5696-0009-storygeneval-move-move/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/3570-5696-0009-storygeneval-move-move/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 4970-29095-0037-storygeneval-sfx-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 4970-29095-0037-storygeneval-sfx-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">I love the overall feel. Can we make the chair creak a little more prominently, and maybe add a second creak a bit later on?</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/4970-29095-0037-storygeneval-sfx-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/4970-29095-0037-storygeneval-sfx-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 7127-75947-0033-storygeneval-volume-volume -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 7127-75947-0033-storygeneval-volume-volume</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">lower the volume of the second voice</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/7127-75947-0033-storygeneval-volume-volume/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/7127-75947-0033-storygeneval-volume-volume/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 7176-92135-0031-storygeneval-move-move -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 7176-92135-0031-storygeneval-move-move</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">move the first speakers voice more left</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/7176-92135-0031-storygeneval-move-move/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/7176-92135-0031-storygeneval-move-move/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 4077-13751-0019-storygeneval-sfx-add-add -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 4077-13751-0019-storygeneval-sfx-add-add</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Add the sound of horses approaching</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/4077-13751-0019-storygeneval-sfx-add-add/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/4077-13751-0019-storygeneval-sfx-add-add/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 4507-16021-0003-storygeneval-change-change -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 4507-16021-0003-storygeneval-change-change</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Make the crying child sound more faint and distant.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/4507-16021-0003-storygeneval-change-change/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/4507-16021-0003-storygeneval-change-change/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 5105-28233-0000-storygeneval-add-add -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 5105-28233-0000-storygeneval-add-add</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Add sounds of applause</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/5105-28233-0000-storygeneval-add-add/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/5105-28233-0000-storygeneval-add-add/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 5639-40744-0034-storygeneval-add-add -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 5639-40744-0034-storygeneval-add-add</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Add a subtle musical swell as she enters</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/5639-40744-0034-storygeneval-add-add/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/5639-40744-0034-storygeneval-add-add/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 6829-68769-0007-storygeneval-add-add -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 6829-68769-0007-storygeneval-add-add</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Add sounds of someone fidgeting.</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/6829-68769-0007-storygeneval-add-add/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/6829-68769-0007-storygeneval-add-add/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 6829-68771-0001-storygeneval-volume-volume -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 6829-68771-0001-storygeneval-volume-volume</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">make the henchman's voice quieter</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/6829-68771-0001-storygeneval-volume-volume/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/6829-68771-0001-storygeneval-volume-volume/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sample: 1284-1181-0009-storygeneval-add-add -->
+    <div class="sample-container">
+      <div class="sample-id">Sample: 1284-1181-0009-storygeneval-add-add</div>
+      <table class="sample-table">
+        <thead>
+          <tr>
+            <th>Instruction</th>
+            <th>Source</th>
+            <th>Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Add a strained grunt from the husband</span>
+            </td>
+            <td data-label="Source">
+              <audio controls preload="metadata">
+                <source src="samples/1284-1181-0009-storygeneval-add-add/source.wav" type="audio/wav">
+              </audio>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="samples/1284-1181-0009-storygeneval-add-add/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+<!-- End Audio Samples Section -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{YourPaper2024,
+  title={Your Paper Title},
+  author={Author Name},
+  year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
+
+
+  </body>
+  </html>
