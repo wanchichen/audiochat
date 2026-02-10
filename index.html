@@ -306,6 +306,176 @@
       color: #6b7280;
       font-size: 1.1rem;
     }
+
+    /* TLDR Section Styles */
+    .tldr-section {
+      padding: 3rem 0;
+      background: #f9fafb;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .tldr-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .tldr-header h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tldr-header h2::before {
+      content: "⚡";
+    }
+
+    .tldr-header p {
+      color: #64748b;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .tldr-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .tldr-card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tldr-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .tldr-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #f1f5f9;
+    }
+
+    .tldr-card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    .tldr-card.editing .tldr-card-icon {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    }
+
+    .tldr-card.understanding .tldr-card-icon {
+      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    }
+
+    .tldr-card.generation .tldr-card-icon {
+      background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    }
+
+    .tldr-card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .tldr-card-subtitle {
+      font-size: 0.8rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    .tldr-instruction {
+      font-size: 0.9rem;
+      color: #475569;
+      font-style: italic;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      background: #f8fafc;
+      border-radius: 8px;
+      border-left: 3px solid #2563eb;
+      line-height: 1.5;
+    }
+
+    .tldr-audio-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      flex-grow: 1;
+    }
+
+    .tldr-audio-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .tldr-audio-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .tldr-audio-item audio {
+      width: 100%;
+      height: 36px;
+    }
+
+    .tldr-video-container {
+      flex-grow: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #0f172a;
+    }
+
+    .tldr-video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .tldr-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .tldr-section {
+        padding: 2rem 1rem;
+      }
+
+      .tldr-header h2 {
+        font-size: 1.5rem;
+      }
+
+      .tldr-card {
+        padding: 1.25rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -372,18 +542,87 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-       <img src="static/images/arch.png" alt="First research result visualization" loading="lazy"/>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Left: Interface with AudioChat's structured reasoning. Right: Architectural overview of AudioChat.
-      </h2>
+<!-- TLDR Section -->
+<section class="tldr-section">
+  <div class="container">
+    <div class="tldr-header">
+      <h2>TL;DR</h2>
+      <p>One model for editing, understanding, and generating audio stories</p>
+    </div>
+    
+    <div class="tldr-grid">
+      <!-- Editing Demo -->
+      <div class="tldr-card editing">
+        <div class="tldr-card-header">
+          <div class="tldr-card-icon">✏️</div>
+          <div>
+            <div class="tldr-card-title">Audio Editing</div>
+            <div class="tldr-card-subtitle">Open-ended instruction following</div>
+          </div>
+        </div>
+        <div class="tldr-instruction">
+          "Make the door opening sound more dramatic, and make it faster."
+        </div>
+        <div class="tldr-audio-row">
+          <div class="tldr-audio-item">
+            <span class="tldr-audio-label">Source</span>
+            <audio controls preload="metadata">
+              <source src="samples/1320-122617-0021-storygeneval-change-change/source.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="tldr-audio-item">
+            <span class="tldr-audio-label">Edited</span>
+            <audio controls preload="metadata">
+              <source src="samples/1320-122617-0021-storygeneval-change-change/audiochat.wav" type="audio/wav">
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <!-- Understanding Demo -->
+      <div class="tldr-card understanding">
+        <div class="tldr-card-header">
+          <div class="tldr-card-icon">🎧</div>
+          <div>
+            <div class="tldr-card-title">Audio Understanding</div>
+            <div class="tldr-card-subtitle">Multi-speaker scene analysis</div>
+          </div>
+        </div>
+        <div class="tldr-instruction">
+          Fine-grained captioning of complex audio scenes with multiple speakers and sound effects
+        </div>
+        <div class="tldr-video-container">
+          <video controls preload="metadata">
+            <source src="understanding/religion.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Generation Demo -->
+      <div class="tldr-card generation">
+        <div class="tldr-card-header">
+          <div class="tldr-card-icon">🎬</div>
+          <div>
+            <div class="tldr-card-title">Audio Storytelling</div>
+            <div class="tldr-card-subtitle">Generate from text prompts</div>
+          </div>
+        </div>
+        <div class="tldr-instruction">
+          "Create an audio scene for approaching an old castle door."
+        </div>
+        <div class="tldr-audio-row">
+          <div class="tldr-audio-item">
+            <span class="tldr-audio-label">Generated</span>
+            <audio controls preload="metadata">
+              <source src="sample_storytelling/1221-135767-0012_storygeneval-sfx-remove_998001/audiochat.wav" type="audio/wav">
+            </audio>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<!-- End TLDR Section -->
 
 
 <!-- Paper abstract -->
@@ -408,13 +647,10 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="understanding/religion.mp4" type="video/mp4">
-      </video>
+       <img src="static/images/arch.png" alt="First research result visualization" loading="lazy"/>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Left: Interface with AudioChat's structured reasoning. Right: Architectural overview of AudioChat.
       </h2>
     </div>
   </div>
@@ -1188,14 +1424,98 @@
             <th>Generated</th>
           </tr>
         </thead>
-        <tbody>
+          <tbody>
           <tr>
             <td data-label="Instruction">
-              <span class="instruction-text">Create a scene in a medieval castle, a knight preparing for battle.</span>
+              <span class="instruction-text">Create an audio scene for approaching an old castle door.</span>
             </td>
             <td data-label="Generated">
               <audio controls preload="metadata">
-                <source src="sample_storytelling/61-70968-0029_storygeneval-change_998001/audiochat.wav" type="audio/wav">
+                <source src="sample_storytelling/1221-135767-0012_storygeneval-sfx-remove_998001/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Create a soundscape for a dimly lit study, focusing on a sense of focused thought.</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/1089-134686-0006_storygeneval-sfx-add_998001/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+          <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Let's create a soundscape for a bustling medieval marketplace.</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/6829-68769-0046_storygeneval-sfx-add_999000/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+          <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">I need to build a soundscape for a scene where a storm is building</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/260-123288-0013_storygeneval-remove_998001/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+                <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">I need sound effects for a mysterious magical entrance.</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/1320-122617-0014_storygeneval-sfx-move_999000/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Create the sound of a gathering storm and a forming whirlwind</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/260-123288-0013_storygeneval-volume_999000/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">I want to create an immersive soundscape of a hidden, overgrown temple in a tropical rainforest.</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/908-31957-0006_storygeneval-sfx-move_999000/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+                <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">I want to create a soundscape of a lonely lighthouse on a rocky coast during a storm.</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/908-31957-0006_storygeneval-sfx-volume_998001/audiochat.wav" type="audio/wav">
               </audio>
             </td>
           </tr>
@@ -1208,6 +1528,18 @@
             <td data-label="Generated">
               <audio controls preload="metadata">
                 <source src="sample_storytelling/61-70968-0040_storygeneval-remove_999000/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+          <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">Create a scene in a medieval castle, a knight preparing for battle.</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/61-70968-0029_storygeneval-change_998001/audiochat.wav" type="audio/wav">
               </audio>
             </td>
           </tr>
@@ -1287,30 +1619,6 @@
         <tbody>
           <tr>
             <td data-label="Instruction">
-              <span class="instruction-text">I need to build a soundscape for a scene where a storm is building</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/260-123288-0013_storygeneval-remove_998001/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
-              <span class="instruction-text">Create the sound of a gathering storm and a forming whirlwind</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/260-123288-0013_storygeneval-volume_999000/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
               <span class="instruction-text">I want to create a soundscape for a cozy evening scene. Think warm, inviting, and a little bit melancholic.</span>
             </td>
             <td data-label="Generated">
@@ -1323,71 +1631,11 @@
         <tbody>
           <tr>
             <td data-label="Instruction">
-              <span class="instruction-text">I want to create an immersive soundscape of a hidden, overgrown temple in a tropical rainforest.</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/908-31957-0006_storygeneval-sfx-move_999000/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
-              <span class="instruction-text">I want to create a soundscape of a lonely lighthouse on a rocky coast during a storm.</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/908-31957-0006_storygeneval-sfx-volume_998001/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
-              <span class="instruction-text">Create a soundscape for a dimly lit study, focusing on a sense of focused thought.</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/1089-134686-0006_storygeneval-sfx-add_998001/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
-              <span class="instruction-text">Create an audio scene for approaching an old castle door.</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/1221-135767-0012_storygeneval-sfx-remove_998001/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
               <span class="instruction-text">Create the soundscape for an old wizard's study.</span>
             </td>
             <td data-label="Generated">
               <audio controls preload="metadata">
                 <source src="sample_storytelling/1284-1181-0016_storygeneval-sfx-add_999000/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
-              <span class="instruction-text">I need sound effects for a mysterious magical entrance.</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/1320-122617-0014_storygeneval-sfx-move_999000/audiochat.wav" type="audio/wav">
               </audio>
             </td>
           </tr>
@@ -1443,18 +1691,6 @@
         <tbody>
           <tr>
             <td data-label="Instruction">
-              <span class="instruction-text">Let's create a soundscape for a bustling medieval marketplace.</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/6829-68769-0046_storygeneval-sfx-add_999000/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
               <span class="instruction-text">A calm lake at dusk</span>
             </td>
             <td data-label="Generated">
@@ -1479,18 +1715,6 @@
         <tbody>
           <tr>
             <td data-label="Instruction">
-              <span class="instruction-text">A scene on a ship</span>
-            </td>
-            <td data-label="Generated">
-              <audio controls preload="metadata">
-                <source src="sample_storytelling/5142-33396-0021_storygeneval-sfx-move_998001/audiochat.wav" type="audio/wav">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td data-label="Instruction">
               <span class="instruction-text">A gritty urban alleyway at night</span>
             </td>
             <td data-label="Generated">
@@ -1508,6 +1732,18 @@
             <td data-label="Generated">
               <audio controls preload="metadata">
                 <source src="sample_storytelling/3729-6852-0045_storygeneval-sfx-remove_999000/audiochat.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td data-label="Instruction">
+              <span class="instruction-text">A scene on a ship</span>
+            </td>
+            <td data-label="Generated">
+              <audio controls preload="metadata">
+                <source src="sample_storytelling/5142-33396-0021_storygeneval-sfx-move_998001/audiochat.wav" type="audio/wav">
               </audio>
             </td>
           </tr>
